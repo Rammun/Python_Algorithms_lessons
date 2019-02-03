@@ -16,7 +16,7 @@ def bubble_sort(source):
                 array[i], array[i + 1] = array[i + 1], array[i]
                 is_changed = True
 
-        if(not is_changed):
+        if not is_changed:
             break
         n += 1
 
@@ -24,9 +24,9 @@ def bubble_sort(source):
 
 
 count = 10
-array = [random.randint(-100, 99) for i in range(count)]
-print(array)
-print()
+source = [random.randint(-100, 99) for i in range(count)]
+result = bubble_sort(source)
 
-result = bubble_sort(array)
+print(source)
+print()
 print(result)
